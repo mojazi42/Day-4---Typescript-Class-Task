@@ -1,12 +1,10 @@
 // Section 1: Type Annotations & Functions
 function capitalizeWords(input: string): string {
-  if (!input.trim()) return ""; // Handles empty strings
-  return input.split(" ")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
+  return input.toUpperCase().trim(); // Converts the entire string to uppercase
 }
-console.log(capitalizeWords("hello world")); // "Hello World"
-console.log(capitalizeWords("")); // ""
+
+console.log(capitalizeWords("Mohammed Alharbi")); // "MOHAMMED ALHARBI"
+
 
 // Task 2: Number Validator Function
 function isValidNumber(input: unknown): boolean {
